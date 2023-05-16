@@ -2,8 +2,9 @@ repos:
 -   repo: https://github.com/psf/black
     rev: eb32729
     hooks:
-    -  id: black
-       args: [ --safe, ./*/*.py]
+    -    id: black
+         files:  src/*.py
+         args: [ --safe ]
 
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
@@ -21,4 +22,5 @@ repos:
     rev: 3.9.2
     hooks:
     -    id: flake8
+         files:  src/*.py
          language_version: python3
