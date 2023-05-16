@@ -1,8 +1,10 @@
 repos:
--   repo: https://github.com/psf/black
-    rev: eb32729
+-   repo: https://github.com/ambv/black
+    rev: 23.3.0
     hooks:
-    -    id: black
+    - id: black
+      language_version: python3.10
+      args: [-t, py310]
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -13,11 +15,4 @@ repos:
     -    id:  debug-statements
     -    id:  end-of-file-fixer
     -    id:  name-tests-test
-         language_version: python3
-
--   repo:  https://github.com/PyCQA/flake8
-    rev: 3.9.2
-    hooks:
-    -    id: flake8
-         files: ''
          language_version: python3

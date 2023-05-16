@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from fastapi.testclient import TestClient
 from initial_phase.src.api import api
 
