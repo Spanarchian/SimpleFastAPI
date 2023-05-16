@@ -3,6 +3,7 @@ repos:
     rev: eb32729
     hooks:
     -    id: black
+         files: ''
          args: [ --safe ]
 
 
