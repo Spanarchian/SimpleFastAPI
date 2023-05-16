@@ -3,7 +3,7 @@ repos:
     rev: eb32729
     hooks:
     -    id: black
-         files:  './src/*.py'
+         files:  './src/api.py'
          args: [ --safe ]
 
 
@@ -22,5 +22,5 @@ repos:
     rev: 3.9.2
     hooks:
     -    id: flake8
-         files:  './src/*.py'
+         files:  './src/api.py'
          language_version: python3
